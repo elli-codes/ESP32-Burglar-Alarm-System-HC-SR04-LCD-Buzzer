@@ -24,7 +24,7 @@ The alarm can be stopped by removing the object from in front of the sensor or p
 📊 Serial monitoring: Sends measured distance values to the Serial Monitor for debugging.
 Important hardware note: GPIO 34 on the ESP32 is input-only, which makes it suitable for the ECHO signal. However, the standard HC-SR04 ECHO output can be approximately 5 V, while ESP32 GPIOs are not 5 V tolerant. Use a suitable voltage divider or level shifter between ECHO and GPIO 34. Also verify the LCD's logic-level compatibility and use a suitable driver if the buzzer requires more current than an ESP32 GPIO can provide.                                                                                         ⚙️ How It Works
 
-1. System starts in Safe Mode OFF                   2. Activate Safe Mode             3. Detect an object       4. Stop the alarm           🛠️ Software and Development Environment
+1. System starts in Safe Mode OFF                   2. Activate Safe Mode             3. Detect an object       4. Stop the alarm                                                                                  🛠️ Software and Development Environment
 
 Programming language: C++ (Arduino framework)
 
